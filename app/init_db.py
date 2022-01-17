@@ -9,15 +9,15 @@ with open('schema.sql') as f:
 cur = connection.cursor()
 
 cur.execute("INSERT INTO posts (title, content) VALUES (?, ?)",
-            ('2020 CNCF Annual Report', 'The Cloud Native Computing Foundation (CNCF) annual report for 2020 is now available. The report highlights the growth of the community, events, projects, and more, over the past year.')
+            ('2022 CNCF Annual Report', 'The Cloud Native Computing Foundation (CNCF) annual report for 2022 is now available. The report highlights the growth of the community, events, projects, and more, over the past year.')
             )
 
 cur.execute("INSERT INTO posts (title, content) VALUES (?, ?)",
-            ('KubeCon + CloudNativeCon 2021', 'The Cloud Native Computing Foundation flagship conference gathers leading technologists from leading open source and cloud native communities to further the education and advancement of cloud native computing.')
+            ('KubeCon + CloudNativeCon 2022', 'The Cloud Native Computing Foundation flagship conference gathers leading technologists from leading open source and cloud native communities to further the education and advancement of cloud native computing. For more info, visit https://www.cncf.io/')
             )
 
 cur.execute("INSERT INTO posts (title, content) VALUES (?, ?)",
-            ('Kubernetes v1.20 Release Notes', 'Kubernetes is an open source container orchestration engine for automating deployment, scaling, and management of containerized applications. The open source project is hosted by the Cloud Native Computing Foundation (CNCF).')
+            ('Kubernetes v1.23 Release Notes', 'Kubernetes is an open source container orchestration engine for automating deployment, scaling, and management of containerized applications. The open source project is hosted by the Cloud Native Computing Foundation (CNCF). For more info, visit https://kubernetes.io/releases/')
             )
 
 cur.execute("INSERT INTO posts (title, content) VALUES (?, ?)",
